@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3b7447;
+    line-height: 1.6;
+}
+
+.info {
+    list-style: none;
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+}
+
+header {
+    position: relative;
+}
+
+.texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.text-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.text-overlay h2 {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+.alimento-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.alimento {
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.alimento:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.alimento img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ong-item {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ong-item h3 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: right;
+    padding: 10px;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .alimento {
+        width: 100%;
+    }
+}
